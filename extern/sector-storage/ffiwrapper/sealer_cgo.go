@@ -108,8 +108,6 @@ func CopyFile(src, dst string) bool {
 //ENDING
 
 
-
-
 func (sb *Sealer) AddPiece(ctx context.Context, sector storage.SectorRef, existingPieceSizes []abi.UnpaddedPieceSize, pieceSize abi.UnpaddedPieceSize, file storage.Data) (abi.PieceInfo, error) {
 	// TODO: allow tuning those:
 	chunk := abi.PaddedPieceSize(4 << 20)
@@ -362,7 +360,6 @@ func (sb *Sealer) AddPiece(ctx context.Context, sector storage.SectorRef, existi
 	return pps, nil
 	//ENDING
 }
-
 
 
 
