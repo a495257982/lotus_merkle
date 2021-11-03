@@ -178,10 +178,10 @@ var runCmd = &cli.Command{
 		}
 
 		// Connect to storage-miner
-		/*ctx := lcli.ReqContext(cctx)*/
+		ctx := lcli.ReqContext(cctx)
 		// Connect to storage-miner
 		//added by jack
-		ctx := lcli.DaemonContext(cctx)
+		//ctx := lcli.DaemonContext(cctx)
 		//ENDING
 
 		var nodeApi api.StorageMiner
